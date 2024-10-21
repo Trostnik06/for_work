@@ -4,7 +4,6 @@ const app = express();
 
 app.get('/hello', (req, res) => {
   const name = req.query.name || 'World';
-
   res.send(`Greetings, ${name}!`);
 });
 
